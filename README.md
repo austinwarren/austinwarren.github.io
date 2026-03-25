@@ -4,7 +4,7 @@ This repo contains the source for the site and its GitHub Pages deployment workf
 
 ## Link
 
-austingwarren.com
+https://austingwarren.com/
 
 ### Run Locally
 

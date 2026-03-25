@@ -13,7 +13,6 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior-x: none;
-    scroll-padding-top: 6rem;
   }
   body {
     @apply bg-[var(--color-bg-main)] text-slate-900 font-sans antialiased;
