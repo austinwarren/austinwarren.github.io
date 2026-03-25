@@ -52,7 +52,7 @@ export const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' 
-          : 'bg-white/10 backdrop-blur-md border-b border-white/10 py-5'
+          : 'bg-slate-950/80 backdrop-blur-md border-b border-white/10 py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -84,7 +84,7 @@ export const Navbar = () => {
                   : activeSection === link.href.slice(1)
                     ? isScrolled
                       ? 'text-blue-600'
-                      : 'text-white'
+                      : 'text-blue-400'
                   : isScrolled
                     ? 'text-slate-600 hover:text-blue-600'
                     : 'text-white/80 hover:text-white'
