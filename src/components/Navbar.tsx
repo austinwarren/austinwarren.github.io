@@ -114,7 +114,11 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-slate-100 overflow-hidden max-h-[calc(100vh-72px)] overflow-y-auto"
+            className={`md:hidden overflow-hidden max-h-[calc(100vh-72px)] overflow-y-auto ${
+              isScrolled
+                ? 'bg-white border-t border-slate-100'
+                : 'bg-slate-950/95 backdrop-blur-md border-t border-white/10'
+            }`}
           >
             <div className="flex flex-col p-6 space-y-4">
               {navLinks.map((link) => (
@@ -124,8 +128,12 @@ export const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-lg font-medium transition-colors ${
                     activeSection === link.href.slice(1)
-                      ? 'text-blue-600'
-                      : 'text-slate-600 hover:text-blue-600'
+                      ? isScrolled
+                        ? 'text-blue-600'
+                        : 'text-blue-400'
+                      : isScrolled
+                        ? 'text-slate-600 hover:text-blue-600'
+                        : 'text-white/80 hover:text-white'
                   }`}
                 >
                   {link.name}
