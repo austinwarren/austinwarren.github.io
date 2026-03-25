@@ -85,28 +85,28 @@ export const Contact = () => {
             <div className="space-y-6">
               <a 
                 href="mailto:austingw2020@gmail.com" 
-                className="flex items-center gap-6 p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all group"
+                className="flex items-start sm:items-center gap-4 sm:gap-6 p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="p-4 bg-blue-50 rounded-2xl group-hover:bg-blue-100 transition-colors">
                   <Mail className="text-blue-600" size={32} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">Email</p>
-                  <p className="text-xl font-bold text-slate-900">contact@austingwarren.com</p>
+                  <p className="text-lg sm:text-xl font-bold text-slate-900 break-words">contact@austingwarren.com</p>
                 </div>
               </a>
               <a 
                 href="https://www.linkedin.com/in/austin-warren-081ab4211/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-6 p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all group"
+                className="flex items-start sm:items-center gap-4 sm:gap-6 p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="p-4 bg-purple-50 rounded-2xl group-hover:bg-purple-100 transition-colors">
                   <Linkedin className="text-purple-600" size={32} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">LinkedIn</p>
-                  <p className="text-xl font-bold text-slate-900">linkedin.com/in/austin-warren</p>
+                  <p className="text-lg sm:text-xl font-bold text-slate-900 break-words">linkedin.com/in/austin-warren</p>
                 </div>
               </a>
             </div>

@@ -22,6 +22,14 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -30,12 +38,12 @@ export const Navbar = () => {
           : 'bg-white/10 backdrop-blur-md border-b border-white/10 py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         <motion.a
           href="#home"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className={`text-xl font-bold tracking-tight transition-colors ${
+          className={`text-lg sm:text-xl font-bold tracking-tight transition-colors ${
             isScrolled ? 'text-slate-900' : 'text-white'
           }`}
         >
@@ -75,6 +83,7 @@ export const Navbar = () => {
             isScrolled ? 'text-slate-600' : 'text-white'
           }`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -87,7 +96,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-slate-100 overflow-hidden"
+            className="md:hidden bg-white border-t border-slate-100 overflow-hidden max-h-[calc(100vh-72px)] overflow-y-auto"
           >
             <div className="flex flex-col p-6 space-y-4">
               {navLinks.map((link) => (
