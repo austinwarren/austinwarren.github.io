@@ -68,9 +68,10 @@ export const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
             className="space-y-8"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
@@ -112,9 +113,10 @@ export const Contact = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl relative overflow-hidden"
           >
             <form className="space-y-6" onSubmit={handleSubmit}>

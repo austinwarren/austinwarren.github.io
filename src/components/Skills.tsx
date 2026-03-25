@@ -28,7 +28,8 @@ export const Skills = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
             className="text-3xl md:text-5xl font-bold text-slate-900 mb-4"
           >
             Technical <span className="gradient-text">Skills</span>
@@ -36,8 +37,8 @@ export const Skills = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="text-lg text-slate-500 max-w-2xl mx-auto"
           >
             My technical toolkit for building high-performance, scalable applications.
@@ -50,8 +51,8 @@ export const Skills = () => {
               key={category.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
               className="p-8 bg-slate-50 rounded-3xl border border-slate-100 card-hover"
             >
               <div className="flex items-center gap-4 mb-6">

@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="py-12 px-6 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="text-center md:text-left">
-          <a href="#home" className="text-xl font-bold tracking-tight">
+          <a href="#home" className="text-xl font-bold tracking-tight text-slate-900">
             Austin<span className="text-blue-600">Warren</span>
           </a>
           <p className="text-sm text-slate-500 mt-2">
@@ -17,13 +17,13 @@ export const Footer = () => {
         </div>
 
         <div className="flex items-center gap-6 text-slate-400">
-          <a href="https://github.com/austinwarren" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://github.com/austinwarren" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">
             <Github size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/austin-warren-081ab4211/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://www.linkedin.com/in/austin-warren-081ab4211/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:austingw2020@gmail.com" className="hover:text-blue-600 transition-colors">
+          <a href="mailto:austingw2020@gmail.com" className="hover:text-slate-900 transition-colors">
             <Mail size={20} />
           </a>
         </div>

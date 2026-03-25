@@ -44,7 +44,8 @@ export const Projects = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
             className="text-3xl md:text-5xl font-bold text-slate-900 mb-4"
           >
             Featured <span className="gradient-text">Projects</span>
@@ -52,8 +53,8 @@ export const Projects = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="text-lg text-slate-500 max-w-2xl mx-auto"
           >
             A selection of my recent work, showcasing frontend development and user-centric design.
@@ -66,8 +67,8 @@ export const Projects = () => {
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: i * 0.2 }}
               className="group bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 card-hover"
             >
               <div className="aspect-video relative overflow-hidden">
