@@ -9,7 +9,6 @@ export default defineConfig(({mode}) => {
     base: '/',
     plugins: [react(), tailwindcss()],
     define: {
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'import.meta.env.VITE_FORMSPREE_ID': JSON.stringify(env.VITE_FORMSPREE_ID),
     },
     resolve: {
