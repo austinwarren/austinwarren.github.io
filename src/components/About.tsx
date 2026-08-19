@@ -30,12 +30,12 @@ export const About = () => {
               <div className="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <Layout className="text-blue-600 mb-4" size={32} />
                 <h3 className="font-bold text-slate-900 mb-2">Web Apps</h3>
-                <p className="text-sm text-slate-500">React, Tailwind CSS</p>
+                <p className="text-sm text-slate-500">Modern, responsive full-stack applications</p>
               </div>
               <div className="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <Smartphone className="text-purple-600 mb-4" size={32} />
                 <h3 className="font-bold text-slate-900 mb-2">Mobile Apps</h3>
-                <p className="text-sm text-slate-500">React Native, Zustand, Expo, Tailwind CSS</p>
+                <p className="text-sm text-slate-500">Cross-platform for iOS & Android</p>
               </div>
             </div>
           </motion.div>
@@ -54,17 +54,6 @@ export const About = () => {
                 className="object-cover w-full h-full"
                 referrerPolicy="no-referrer"
               />
-            </div>
-            <div className="absolute -bottom-8 -left-8 p-8 bg-white rounded-3xl shadow-xl border border-slate-100 hidden md:block">
-              <div className="flex items-center gap-4">
-                <div className="p-4 bg-blue-50 rounded-2xl">
-                  <Code2 className="text-blue-600" size={32} />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">Experience</p>
-                  <p className="text-xl font-bold text-slate-900">Software Engineer</p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>

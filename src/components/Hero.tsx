@@ -9,7 +9,7 @@ export const Hero = () => {
       className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden"
     >
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 -z-10"
         style={{
           backgroundImage: 'url("/images/beach.jpg")',
@@ -26,17 +26,14 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 backdrop-blur-md border border-blue-400/30 rounded-full">
-            Building modern web & mobile apps
-          </span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">
             Austin <span className="text-blue-400"> Warren</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-slate-200 mb-8">
-            Software Engineer • React Native
+            Co-Founder & Software Engineer
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            I build responsive web and mobile applications with 
+            I build responsive web and mobile applications with
             a focus on performance, clean code, and great user experiences.
           </p>
 

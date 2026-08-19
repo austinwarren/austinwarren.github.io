@@ -27,10 +27,6 @@ export const Footer = () => {
             <Mail size={20} />
           </a>
         </div>
-
-        <div className="text-sm text-slate-500 font-medium">
-          Built with React & Tailwind CSS
-        </div>
       </div>
     </footer>
   );
